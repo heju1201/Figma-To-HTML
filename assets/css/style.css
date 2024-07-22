@@ -37,6 +37,7 @@ a {
 }
 .btn:hover {
   opacity: 0.9; /* làm mờ */
+  cursor: pointer;
 }
 .heading-h2 {
   font-family: var(--font-heading);
@@ -290,4 +291,82 @@ a {
   background-color: var(--primary-color);
   color: #ffffff;
   cursor: pointer;
+}
+/* =================popular bot=============== */
+.popular .course-list {
+  display: flex;
+  margin-top: 55px;
+  gap: 30px;
+}
+.popular .course-item {
+  background-color: #ffffff;
+  margin-top: 55px;
+  border-radius: 12px;
+  border: 1px solid #e2dfda;
+}
+.popular .course-item:hover {
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
+  border: 1px solid transparent;
+}
+.popular .course-item .thumb {
+  height: 278px;
+  border-radius: 12px 12px 0px 0px;
+  object-fit: cover;
+  width: 100%;
+}
+.popular .course-item .info {
+  padding: 16px 22px 22px;
+}
+.popular .course-item .foot,
+.popular .course-item .rating,
+.popular .course-item .head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.popular .course-item .title a {
+  font-weight: 600;
+  size: 1.8rem;
+  line-height: 1.67; /* 166.667% */
+  color: #171100;
+}
+.popular .rating .value {
+  margin-left: 6px;
+  font-size: 1.6rem;
+  color: #fea31b;
+  line-height: 1.75; /* 175% */
+}
+
+.popular .course-item .desc {
+  font-size: 1.4rem;
+  margin-top: 6px;
+  color: #5f5b53;
+  line-height: 1.86; /* 185.741% */
+}
+.popular .course-item .foot {
+  margin-top: 12px;
+}
+.popular .course-item .price {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.67; /* 166.667 */
+  color: #171100;
+}
+
+.popular .course-item .btn-book-now {
+  color: #ffffff;
+  border: none;
+  width: 118px;
+  height: 50px;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 26px;
+}
+
+.popular .course-item .btn-book-now:hover {
+  background-color: var(--primary-color);
 }
