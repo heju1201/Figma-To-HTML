@@ -47,6 +47,18 @@ a {
   line-height: 1.26; /* 126.316 */
   letter-spacing: -2%;
 }
+/* đại khái text dài quá cho hiển thị một dòng khi dùng class náy */
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+/* đây là 2 dòng */
+.line-clamp.line-2 {
+  --line-clamp: 2;
+}
+
 /*==================header===================*/
 .header {
   background: #fffcf4;
@@ -299,6 +311,8 @@ a {
   gap: 30px;
 }
 .popular .course-item {
+  /* làm cho các khối mang class course-item luôn luôn bằng nhau  */
+  flex: 1;
   background-color: #ffffff;
   margin-top: 55px;
   border-radius: 12px;
