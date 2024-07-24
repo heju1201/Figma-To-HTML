@@ -388,27 +388,31 @@ a {
 .feedback {
   margin-top: 135px;
   background-color: #2e2100;
-  height: 380px;
-  display: flex;
+  padding: 96px 0;
+  /* height: 380px; */
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
+}
+.feedback .feedback-list {
+  display: flex;
+  overflow: hidden;
 }
 .feedback .feedback-item {
+  width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  /* -------------left---------------- */
+  /* align-items: center;
+  justify-content: space-between; */
+  flex-shrink: 0;
 }
+/* -------------left---------------- */
 .feedback-item .avatar {
   width: 72px;
   height: 72px;
   border-radius: 50%;
   object-fit: cover;
 }
-.feedback .feedback-item .info {
-  width: 159px;
-  height: 188px;
-}
+
 .feedback .info .member-name {
   margin-top: 18px;
   font-family: var(--font-heading);
@@ -431,13 +435,13 @@ a {
   margin-top: 28px;
   gap: 6px;
   display: flex;
-  cursor: pointer;
 }
 .feedback-item .dot {
   width: 6px;
   height: 6px;
   background: #634700;
   border-radius: 50%;
+  cursor: pointer;
 }
 .feedback-item .dot.active {
   background: var(--primary-color);
@@ -450,15 +454,15 @@ a {
   width: 66%;
   margin-left: auto;
 }
-.feedback .content .open-quotes {
+/* .feedback .content .open-quotes {
   margin-bottom: 11px;
-}
+} */
 .feedback .content blockquote {
   color: #ffffff;
   font-size: 2.6rem;
   font-weight: 400;
+  font-style: italic;
   /* line-height: 40px; */
   line-height: 1.53; /* 153.846% */
-  text-align: left;
   margin-left: 30px;
 }
