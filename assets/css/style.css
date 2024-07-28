@@ -563,9 +563,11 @@ a {
   margin-top: 55px;
   display: flex;
   gap: 30px;
+  overflow: hidden;
 }
 .blogs .blog-item {
-  width: 33.33%;
+  flex-shrink: 0;
+  width: calc(33.33% - 20px);
   /* flex: 1; */
   border-radius: 16px;
   background-color: #ffffff;
@@ -638,6 +640,7 @@ a {
 }
 .blogs .blog-item .btn-read-more {
   margin: 12px 0;
+  font-size: 1.4rem;
   width: 118px;
   height: 50px;
   border-radius: 25px;
@@ -646,7 +649,7 @@ a {
   background-color: var(--primary-color);
 }
 .blogs .dots {
-  margin-top: 40px;
+  margin-top: 38px;
   display: flex;
   justify-content: center;
   gap: 6px;
@@ -656,7 +659,80 @@ a {
   height: 6px;
   border-radius: 50%;
   background-color: #5f5b53;
+  cursor: pointer;
 }
 .blogs .dot.active {
   background-color: var(--primary-color);
+  cursor: default;
+}
+/* ===================footer================== */
+.footer {
+  background: #2e2100;
+  padding: 96px 135px 0;
+}
+
+.footer .row {
+  padding-bottom: 38px;
+  border-bottom: 1px solid #59554b;
+  display: flex;
+}
+
+.footer .row .column {
+  width: 21.6%;
+}
+.footer .row .column:first-child {
+  width: 35%;
+}
+
+.footer .desc {
+  margin-top: 18px;
+  max-width: 267px;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 26px;
+  color: #bfbcb2;
+}
+.footer .column .socials {
+  margin-top: 18px;
+  display: flex;
+  gap: 18px;
+}
+.footer .socials .icon {
+  width: 15px;
+  height: 15px;
+}
+.footer .column .title {
+  padding-bottom: 14px;
+  padding-right: 48px;
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.75;
+  color: #ffffff;
+  border-bottom: 1px solid #59554b;
+}
+.footer .list a {
+  display: inline-block;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.86;
+  color: #bfbcb2;
+  margin-top: 12px;
+}
+.footer .list li:first-child {
+  margin-top: 28px;
+}
+footer .list strong {
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.86;
+  color: #fff;
+}
+.footer .copyright {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  color: #807d74;
+  padding: 28px 0;
 }
